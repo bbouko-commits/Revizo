@@ -1,8 +1,8 @@
-# Revisio
+# Révizo
 
-Revisio aide les enfants à préparer leurs interrogations : photographier un cours, préciser ce qu'il faut étudier et la date, générer résumés, flashcards et questionnaires, puis suivre des séances de révision. Le parent contrôle, corrige et recadre les contenus générés.
+Révizo aide les enfants à préparer leurs interrogations : photographier un cours, préciser ce qu'il faut étudier et la date, générer résumés, flashcards et questionnaires, puis suivre des séances de révision. Le parent contrôle, corrige et recadre les contenus générés.
 
-Nom de travail ; le dépôt s'appelle `Revizo`. Le nom définitif est une décision ouverte.
+Nom du produit : Révizo (décision du mainteneur, #19). Identifiant technique sans accent : `revizo`.
 
 ## État
 

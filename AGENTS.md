@@ -1,10 +1,10 @@
-# Revisio — consignes communes
+# Révizo — consignes communes
 
 Référence unique pour tous les agents (Codex, Claude Code, autres). `CLAUDE.md` importe ce fichier : ne recopiez pas ces règles ailleurs, faites un lien.
 
 ## Produit
 
-Revisio aide un enfant à préparer une interrogation : il photographie son cours, précise ce qu'il faut étudier et la date, obtient résumé, flashcards et questionnaires, puis suit des séances de révision. Le parent vérifie, modifie et recadre les contenus générés. Nom de travail : Revisio (dépôt `Revizo`, design system « Révizo ») ; nom définitif à confirmer (#19). Roadmap : #45.
+Révizo aide un enfant à préparer une interrogation : il photographie son cours, précise ce qu'il faut étudier et la date, obtient résumé, flashcards et questionnaires, puis suit des séances de révision. Le parent vérifie, modifie et recadre les contenus générés. Nom du produit : Révizo ; identifiant technique sans accent `revizo` (packages, manifeste, dépôt). Roadmap : #45.
 
 ## État du dépôt
 
