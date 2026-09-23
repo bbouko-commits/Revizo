@@ -1,0 +1,65 @@
+name: Tâche technique
+description: Fondation, outillage, CI, dette ou décision technique sans effet fonctionnel direct.
+title: "[Technique] "
+body:
+  - type: textarea
+    id: objectif
+    attributes:
+      label: Objectif
+      description: Le problème technique et pourquoi le traiter maintenant.
+    validations:
+      required: true
+  - type: textarea
+    id: perimetre
+    attributes:
+      label: Périmètre
+    validations:
+      required: true
+  - type: textarea
+    id: hors-perimetre
+    attributes:
+      label: Hors périmètre
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: dependances
+    attributes:
+      label: Dépendances et décisions
+      description: Issues préalables, ADR à écrire ou à respecter.
+      placeholder: "Aucune / #n / ADR NNNN"
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Commandes à exécuter, environnement propre, mesures attendues.
+    validations:
+      required: true
+  - type: dropdown
+    id: priorite
+    attributes:
+      label: Priorité
+      options:
+        - P0 — cadrage et fondations
+        - P1 — parcours MVP et pilote
+        - P2 — futur ou à confirmer
+    validations:
+      required: true
+  - type: dropdown
+    id: lot
+    attributes:
+      label: Lot
+      options:
+        - MVP
+        - Futur
+    validations:
+      required: true

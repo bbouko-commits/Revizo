@@ -1,0 +1,94 @@
+name: Anomalie
+description: Un comportement incorrect par rapport à ce qui est attendu.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dépôt public : décrivez le problème avec des données inventées. Pas de photo de cours réel, de nom d'enfant, de jeton ou de clé dans les journaux collés.
+  - type: textarea
+    id: constat
+    attributes:
+      label: Constat
+      description: Ce qui se passe.
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes de reproduction
+      value: |
+        1.
+    validations:
+      required: true
+  - type: input
+    id: environnement
+    attributes:
+      label: Environnement
+      description: Navigateur, appareil, version ou commit.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - Sécurité ou données d'une autre famille visibles
+        - Perte de données ou de corrections du parent
+        - Parcours bloqué
+        - Gêne contournable
+    validations:
+      required: true
+  - type: textarea
+    id: perimetre
+    attributes:
+      label: Périmètre et hors périmètre de la correction
+      description: Ce qui sera corrigé, et ce qui ne l'est pas dans cette issue.
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères de correction
+      description: Observables ; un test de non-régression est attendu.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: dependances
+    attributes:
+      label: Dépendances et décisions
+      placeholder: "Aucune / #n / Bloqué par décision : …"
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Tests de non-régression et contrôles d'accès entre familles si des données familiales sont concernées.
+    validations:
+      required: true
+  - type: dropdown
+    id: priorite
+    attributes:
+      label: Priorité
+      options:
+        - P0 — cadrage et fondations
+        - P1 — parcours MVP et pilote
+        - P2 — futur ou à confirmer
+    validations:
+      required: true
+  - type: dropdown
+    id: lot
+    attributes:
+      label: Lot
+      options:
+        - MVP
+        - Futur
+    validations:
+      required: true

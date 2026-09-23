@@ -1,0 +1,20 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Réglages locaux des agents
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Documents réels importés pendant les essais locaux : ne jamais versionner
+/local-data/
+
+# Éditeurs et système
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
