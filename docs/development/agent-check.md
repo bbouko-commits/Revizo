@@ -32,6 +32,7 @@ Puis lancer `scripts/check-docs.sh` : il doit afficher `Documentation OK (8 rôl
 | Consignes racine chargées | Codex CLI 0.156.1 | `codex debug prompt-input` depuis la racine, sans clé API | `AGENTS.md` présent dans l'entrée du modèle |
 | Consignes locales | Codex CLI 0.156.1 | idem depuis `backend/` puis `frontend/` | `AGENTS.md` racine puis celui du dossier, dans cet ordre |
 | Rôles exécutables | Codex CLI 0.156.1 | `codex exec` vers un serveur local simulé, projet marqué de confiance ; lecture de la requête envoyée | Les huit rôles proposés comme `agent_type` de `spawn_agent`, sans avertissement de rôle mal formé |
+| Consignes locales à la demande | Claude Code 2.1.280 | Session de travail sur #5 : lecture et édition de fichiers de `backend/` | `backend/CLAUDE.md` (et donc `backend/AGENTS.md`) chargé automatiquement |
 | Contrôle des liens et adaptateurs | — | `scripts/check-docs.sh` | OK ; dans une copie altérée, lien cassé (fichier accentué), section de fiche manquante et adaptateur orphelin sont signalés, et les liens valides avec titre, chevrons, `%20`, ancre ou chemin racine ne le sont pas |
 
 ## Limites connues
@@ -39,6 +40,5 @@ Puis lancer `scripts/check-docs.sh` : il doit afficher `Documentation OK (8 rôl
 - **Codex, sans confiance** : `.codex/agents/` est ignoré sans message. Utiliser alors la fiche directement (« Applique `docs/agents/qa.md` »).
 - **Codex, restrictions des rôles** : un agent créé par `spawn_agent` peut lui-même créer des agents ; la consigne « ne délègue pas » n'est qu'une instruction. L'effet de `sandbox_mode = "read-only"` sur les relecteurs n'a pas été observé sur une vraie exécution de modèle.
 - **Codex, instructions locales** : lancé depuis la racine, Codex ne charge pas `backend/AGENTS.md` ou `frontend/AGENTS.md` ; il dépend de la règle de la racine qui demande de les lire.
-- **Claude Code, instructions locales** : le chargement à la demande de `backend/CLAUDE.md` repose sur la documentation de Claude Code ; non observé ici, car ces dossiers ne contiennent pas encore de code.
 - **Claude Code, relecteurs** : leur outil `Bash` permet techniquement d'écrire ; la lecture seule est une consigne, les autorisations de la session s'appliquent.
 - Les deux outils évoluent vite : refaire cette vérification après une mise à jour.

@@ -156,7 +156,7 @@ Figées dans les fichiers de build par #5, après nouvelle vérification.
 
 | Décision | Proposition | Bloque |
 | --- | --- | --- |
-| Acceptation de l'ADR 0002 (monolithe modulaire, PostgreSQL, stockage objet) | voir l'ADR | #5, #6, #9, #12 |
+| Acceptation de l'ADR 0002 (monolithe modulaire, PostgreSQL, stockage objet) | voir l'ADR | #6, #9, #12 |
 | Hébergement et services payants | à proposer avec #16 | #16, #17 |
 | Plafond mensuel de dépense IA | montant à fixer par le mainteneur | #13 |
 | Fournisseur IA par défaut par tâche | après l'évaluation #21 | #28, #30–#32 |
