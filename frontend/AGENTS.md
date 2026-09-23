@@ -4,7 +4,23 @@ Complète [`AGENTS.md`](../AGENTS.md) à la racine, sans l'assouplir. Fiche du r
 
 ## État
 
-Dossier réservé. Framework : **Angular en PWA** ([ADR 0001](../docs/adr/0001-frontend-angular-pwa.md)). Le projet est initialisé par #5 avec la CLI Angular, puis structuré par #7 ; d'ici là, n'installez aucune dépendance ici. À compléter alors : versions, commandes, structure, conventions de tests.
+Squelette Angular 22 sans fonctionnalité (#5), créé avec la CLI : composants autonomes, routage, CSS, tests unitaires Vitest avec jsdom, pas de rendu serveur. PWA, socle responsive, design system et structure : #7 et #8 ([ADR 0001](../docs/adr/0001-frontend-angular-pwa.md)).
+
+- Node 24 (version exacte dans `.nvmrc`), npm 11, dépendances figées par `package-lock.json` : installer avec `npm ci`.
+- Les scripts d'installation de `@parcel/watcher`, `esbuild`, `lmdb` et `msgpackr-extract` sont refusés (`allowScripts` dans `package.json`) : build et tests n'en ont pas besoin. N'en autorisez un que pour un besoin vérifié.
+
+## Commandes
+
+À lancer dans `frontend/`.
+
+| Besoin | Commande |
+| --- | --- |
+| Installer | `npm ci` |
+| Démarrer (port 4200) | `npm start` |
+| Tests (une passe) | `npm run test:ci` |
+| Formater (Prettier) | `npm run format` |
+| Vérifier le format | `npm run format:check` |
+| Build de production | `npm run build` |
 
 ## Règles techniques déjà applicables
 

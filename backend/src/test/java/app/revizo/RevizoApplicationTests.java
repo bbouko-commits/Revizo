@@ -1,0 +1,11 @@
+package app.revizo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class RevizoApplicationTests {
+
+  @Test
+  void contextLoads() {}
+}
