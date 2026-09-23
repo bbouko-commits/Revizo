@@ -1,0 +1,72 @@
+name: Fonctionnalité
+description: Un comportement visible par un parent ou un enfant.
+title: "[Domaine] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dépôt public : n'ajoutez ni photo de cours réel, ni nom d'enfant, ni capture contenant des données personnelles. Utilisez des exemples inventés.
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Problème et résultat attendu
+      description: Qui en a besoin, dans quelle situation, et ce qui change pour lui.
+    validations:
+      required: true
+  - type: textarea
+    id: perimetre
+    attributes:
+      label: Périmètre
+      description: Ce qui est inclus.
+    validations:
+      required: true
+  - type: textarea
+    id: hors-perimetre
+    attributes:
+      label: Hors périmètre
+      description: Ce qui est volontairement exclu ou reporté.
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      description: Observables et vérifiables par un test, une démonstration ou une relecture.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: dependances
+    attributes:
+      label: Dépendances et décisions
+      description: Issues à terminer avant, décisions ouvertes qui bloquent (#19).
+      placeholder: "Aucune / #n / Bloqué par décision : …"
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Tests, parcours à démontrer, contrôles d'accès entre familles si des données familiales sont concernées.
+    validations:
+      required: true
+  - type: dropdown
+    id: priorite
+    attributes:
+      label: Priorité
+      options:
+        - P0 — cadrage et fondations
+        - P1 — parcours MVP et pilote
+        - P2 — futur ou à confirmer
+    validations:
+      required: true
+  - type: dropdown
+    id: lot
+    attributes:
+      label: Lot
+      options:
+        - MVP
+        - Futur
+    validations:
+      required: true
