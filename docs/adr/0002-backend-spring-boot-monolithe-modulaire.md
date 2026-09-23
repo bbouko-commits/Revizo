@@ -1,6 +1,6 @@
 # 0002 — Backend Spring Boot en monolithe modulaire, PostgreSQL et stockage objet privé
 
-- **Statut** : proposé. Java et Spring Boot sont un choix déjà exprimé par le mainteneur ; le découpage, la base et le stockage sont des propositions. **#5, #6, #9 et #12 attendent l'acceptation de cet ADR.**
+- **Statut** : accepté pour le socle Java 21, Spring Boot 4.1 et Maven (choix du mainteneur, mis en place par #5 à sa demande). **Proposé** pour le monolithe modulaire, PostgreSQL et le stockage objet : #6, #9 et #12 attendent leur acceptation.
 - **Date** : 2026-09-23
 - **Décideur** : mainteneur du dépôt
 - **Issues** : #1 ; impacte #5, #6, #9, #11, #12, #13
@@ -36,7 +36,7 @@ Le backend porte les données des familles, l'accès des enfants, les imports de
 
 ## Conséquences
 
-- Une fois l'ADR accepté, #5 et #6 créent `backend/` sur ces versions ; #9 fournit PostgreSQL et le stockage S3 local en Docker.
+- #5 crée le squelette `backend/` sur ces versions. Une fois la partie proposée acceptée, #6 pose les modules et #9 fournit PostgreSQL et le stockage S3 local en Docker.
 - L'API doit pouvoir authentifier un client non navigateur (application Capacitor ou native) : à prévoir dans #11.
 - Les choix précis (ORM ou SQL, outil de migration, bibliothèque OpenAPI, SDK des fournisseurs IA) sont faits et justifiés dans #6, #10 et #13.
 - L'hébergement devra fournir PostgreSQL et un stockage objet privé (décision ouverte, #16).

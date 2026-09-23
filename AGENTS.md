@@ -9,7 +9,7 @@ Révizo aide un enfant à préparer une interrogation : il photographie son cour
 ## État du dépôt
 
 - Squelettes `backend/` et `frontend/` sans fonctionnalité métier (#5). Architecture : [`docs/architecture/overview.md`](docs/architecture/overview.md).
-- Frontend : Angular en PWA (ADR 0001, accepté). Backend : Java et Spring Boot en monolithe modulaire avec PostgreSQL et stockage objet (ADR 0002, **proposé** : Java 21, Spring Boot 4.1 et Maven sont en place ; le découpage, PostgreSQL et le stockage objet attendent son acceptation avant #6, #9 et #12).
+- Frontend : Angular en PWA (ADR 0001, accepté). Backend : Java et Spring Boot en monolithe modulaire avec PostgreSQL et stockage objet (ADR 0002 : socle Java 21, Spring Boot 4.1 et Maven accepté et en place ; découpage, PostgreSQL et stockage objet **proposés**, à accepter avant #6, #9 et #12).
 - N'ajoutez pas de dépendance structurante sans ADR accepté dans `docs/adr/`.
 
 ## Règles non négociables

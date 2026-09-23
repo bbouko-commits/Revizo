@@ -22,7 +22,8 @@ Prérequis :
 
 - Git ;
 - JDK 21 ou plus récent (le build compile en Java 21) ;
-- Node.js 24 : la version exacte est dans `frontend/.nvmrc` (`nvm use` dans `frontend/`) ; npm 11 est fourni avec.
+- Node.js 24.21 ou une version 24.x plus récente (`nvm use` dans `frontend/` lit `.nvmrc`), avec npm 11.19 ou plus récent ; `npm ci` refuse les autres versions ;
+- sous Windows : Git Bash ou WSL pour `scripts/*.sh` et `./mvnw` (`mvnw.cmd` fonctionne aussi dans un terminal Windows).
 
 Maven n'a pas besoin d'être installé : `backend/mvnw` télécharge la version prévue et vérifie son empreinte.
 
