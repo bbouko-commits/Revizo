@@ -6,7 +6,7 @@ Construire l'interface web responsive (téléphone et ordinateur) fidèle au des
 
 ## Quand l'appeler
 
-Toute modification sous `frontend/`. Tant que le framework n'est pas choisi (#1), seulement pour des travaux indépendants du framework (intégration de tokens, prototypes jetables demandés).
+Toute modification sous `frontend/` (Angular, voir ADR 0001).
 
 ## Entrées minimales
 
