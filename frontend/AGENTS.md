@@ -7,7 +7,7 @@ Complète [`AGENTS.md`](../AGENTS.md) à la racine, sans l'assouplir. Fiche du r
 Squelette Angular 22 sans fonctionnalité (#5), créé avec la CLI : composants autonomes, routage, CSS, tests unitaires Vitest avec jsdom, pas de rendu serveur. PWA, socle responsive, design system et structure : #7 et #8 ([ADR 0001](../docs/adr/0001-frontend-angular-pwa.md)).
 
 - Node 24 (version exacte dans `.nvmrc`), npm 11, dépendances figées par `package-lock.json` : installer avec `npm ci`.
-- Les scripts d'installation de `@parcel/watcher`, `esbuild`, `lmdb` et `msgpackr-extract` sont refusés (`allowScripts` dans `package.json`) : build et tests n'en ont pas besoin. N'en autorisez un que pour un besoin vérifié.
+- Scripts d'installation des dépendances : refusés par défaut. `.npmrc` active `strict-allow-scripts` (échec de `npm ci` si un paquet à script n'est pas listé) et `engine-strict` (échec hors Node 24). La liste `allowScripts` de `package.json` refuse `@parcel/watcher`, `esbuild`, `fsevents`, `lmdb` et `msgpackr-extract` : build et tests n'en ont pas besoin. N'en autorisez un que pour un besoin vérifié.
 
 ## Commandes
 
